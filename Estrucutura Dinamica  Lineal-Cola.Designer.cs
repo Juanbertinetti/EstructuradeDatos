@@ -130,6 +130,7 @@
             this.BtnAgregar.TabIndex = 7;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // GbElementoEliminado
             // 
@@ -203,6 +204,7 @@
             this.BtnEliminar.TabIndex = 14;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // DgvLista
             // 
