@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace EstructuradeDatos
 {
-    public partial class FrmEstrucuturaDinamicaLinealCola : Form
+    public partial class Estructura_Pila : Form
     {
-        public FrmEstrucuturaDinamicaLinealCola()
+        public Estructura_Pila()
         {
             InitializeComponent();
         }
+        Pila filadepersonas = new Pila();
 
-        Cola filadepersonas = new Cola();
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             Nodo ObjNodo = new Nodo();
@@ -42,16 +42,25 @@ namespace EstructuradeDatos
                 TxtTramiteDos.Text = filadepersonas.Primero.Tramite;
                 filadepersonas.Eliminar();
                 filadepersonas.Recorrer(DgvLista);
-             }
+            }
             else
-                {
+            {
                 TxtCodigoDos.Text = "";
                 TxtNombreDos.Text = "";
                 TxtTramiteDos.Text = "";
-                DgvLista.ClearSelection();
-                }
-
             }
+
+        }
+
+        private void Estructura_Pila_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LStLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void TxtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {

@@ -107,6 +107,7 @@
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(100, 20);
             this.TxtCodigo.TabIndex = 4;
+            this.TxtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCodigo_KeyPress);
             // 
             // TxtNombre
             // 
@@ -256,9 +257,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 19);
+            this.pictureBox1.Image = global::EstructuradeDatos.Properties.Resources.IMG_20230331_WA0007;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 169);
+            this.pictureBox1.Size = new System.Drawing.Size(206, 197);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 

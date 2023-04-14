@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace EstructuradeDatos
 {
-    public partial class FrmEstrucuturaDinamicaLinealCola : Form
+    public partial class Estructura_Lista_Simple : Form
     {
-        public FrmEstrucuturaDinamicaLinealCola()
+        public Estructura_Lista_Simple()
         {
             InitializeComponent();
         }
 
-        Cola filadepersonas = new Cola();
+        ListaSimple filadepersonas = new ListaSimple();
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             Nodo ObjNodo = new Nodo();
@@ -28,6 +28,7 @@ namespace EstructuradeDatos
             filadepersonas.Agregar(ObjNodo);
             filadepersonas.Recorrer(DgvLista);
             filadepersonas.Recorrer(LStLista);
+            filadepersonas.Recorrer(CbCodigo);
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
             TxtTramite.Text = "";
@@ -37,21 +38,34 @@ namespace EstructuradeDatos
         {
             if (filadepersonas.Primero != null)
             {
-                TxtCodigoDos.Text = filadepersonas.Primero.codigo.ToString();
-                TxtNombreDos.Text = filadepersonas.Primero.Nombre;
-                TxtTramiteDos.Text = filadepersonas.Primero.Tramite;
-                filadepersonas.Eliminar();
-                filadepersonas.Recorrer(DgvLista);
-             }
-            else
-                {
-                TxtCodigoDos.Text = "";
-                TxtNombreDos.Text = "";
-                TxtTramiteDos.Text = "";
-                DgvLista.ClearSelection();
-                }
 
+                filadepersonas.Eliminar(Convert.ToInt32(CbCodigo.Text));
+                filadepersonas.Recorrer(CbCodigo);
+                filadepersonas.Recorrer(DgvLista);
+                filadepersonas.Recorrer(LStLista);
             }
+          
+        }
+
+        private void CbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbCodigo.Items.Add(TxtCodigo.Text);
+        }
+
+        private void Estructura_Lista_Simple_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LStLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnpasar_Click(object sender, EventArgs e)
+        {
+           
+        }
 
         private void TxtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -62,5 +76,4 @@ namespace EstructuradeDatos
             }
         }
     }
-    }
-
+}

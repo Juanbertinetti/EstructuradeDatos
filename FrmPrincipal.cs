@@ -34,5 +34,17 @@ namespace EstructuradeDatos
             FrmEstrucuturaDinamicaLinealCola x = new FrmEstrucuturaDinamicaLinealCola();
             x.Show();     
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estructura_Pila x = new Estructura_Pila();
+            x.Show();
+        }
+
+        private void simpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estructura_Lista_Simple x = new Estructura_Lista_Simple();
+            x.Show();
+        }
     }
 }
