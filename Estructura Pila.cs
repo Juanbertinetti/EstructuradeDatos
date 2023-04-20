@@ -27,7 +27,10 @@ namespace EstructuradeDatos
 
             filadepersonas.Agregar(ObjNodo);
             filadepersonas.Recorrer(DgvLista);
+<<<<<<< HEAD
             filadepersonas.Recorrer(LStLista);
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
             TxtTramite.Text = "";
@@ -61,6 +64,7 @@ namespace EstructuradeDatos
         {
 
         }
+<<<<<<< HEAD
 
         private void TxtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -70,6 +74,8 @@ namespace EstructuradeDatos
                 e.Handled = true;
             }
         }
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
     }
     }
 

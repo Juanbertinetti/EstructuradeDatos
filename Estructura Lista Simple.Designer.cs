@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+=======
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             this.GbLista = new System.Windows.Forms.GroupBox();
             this.LStLista = new System.Windows.Forms.ListBox();
             this.DgvLista = new System.Windows.Forms.DataGridView();
@@ -35,7 +39,10 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GbElementoEliminado = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.CbCodigo = new System.Windows.Forms.ComboBox();
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             this.LblCodigoDos = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.GbGrupoElemento = new System.Windows.Forms.GroupBox();
@@ -46,14 +53,32 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TxtTramite = new System.Windows.Forms.TextBox();
             this.BtnAgregar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+=======
+            this.CbCodigo = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             this.GbLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvLista)).BeginInit();
             this.GbElementoEliminado.SuspendLayout();
             this.GbGrupoElemento.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+=======
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 169);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             // GbLista
             // 
             this.GbLista.Controls.Add(this.LStLista);
@@ -72,7 +97,10 @@
             this.LStLista.Name = "LStLista";
             this.LStLista.Size = new System.Drawing.Size(229, 186);
             this.LStLista.TabIndex = 1;
+<<<<<<< HEAD
             this.LStLista.SelectedIndexChanged += new System.EventHandler(this.LStLista_SelectedIndexChanged);
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             // 
             // DgvLista
             // 
@@ -115,6 +143,7 @@
             this.GbElementoEliminado.TabStop = false;
             this.GbElementoEliminado.Text = "Elemento Eliminado";
             // 
+<<<<<<< HEAD
             // CbCodigo
             // 
             this.CbCodigo.FormattingEnabled = true;
@@ -124,6 +153,8 @@
             this.CbCodigo.TabIndex = 15;
             this.CbCodigo.SelectedIndexChanged += new System.EventHandler(this.CbCodigo_SelectedIndexChanged);
             // 
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             // LblCodigoDos
             // 
             this.LblCodigoDos.AutoSize = true;
@@ -192,7 +223,10 @@
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(100, 20);
             this.TxtCodigo.TabIndex = 4;
+<<<<<<< HEAD
             this.TxtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCodigo_KeyPress);
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             // 
             // TxtNombre
             // 
@@ -218,6 +252,7 @@
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
+<<<<<<< HEAD
             // pictureBox1
             // 
             this.pictureBox1.Image = global::EstructuradeDatos.Properties.Resources.IMG_20230414_WA0017;
@@ -227,6 +262,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
+=======
+            // CbCodigo
+            // 
+            this.CbCodigo.FormattingEnabled = true;
+            this.CbCodigo.Location = new System.Drawing.Point(55, 72);
+            this.CbCodigo.Name = "CbCodigo";
+            this.CbCodigo.Size = new System.Drawing.Size(121, 21);
+            this.CbCodigo.TabIndex = 15;
+            this.CbCodigo.SelectedIndexChanged += new System.EventHandler(this.CbCodigo_SelectedIndexChanged);
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             // 
             // Estructura_Lista_Simple
             // 
@@ -239,14 +284,21 @@
             this.Controls.Add(this.GbGrupoElemento);
             this.Name = "Estructura_Lista_Simple";
             this.Text = "Estructura_Lista_Simple";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.Estructura_Lista_Simple_Load);
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             this.GbLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvLista)).EndInit();
             this.GbElementoEliminado.ResumeLayout(false);
             this.GbElementoEliminado.PerformLayout();
             this.GbGrupoElemento.ResumeLayout(false);
             this.GbGrupoElemento.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             this.ResumeLayout(false);
 
         }

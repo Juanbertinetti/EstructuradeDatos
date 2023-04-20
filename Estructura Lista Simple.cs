@@ -27,8 +27,11 @@ namespace EstructuradeDatos
 
             filadepersonas.Agregar(ObjNodo);
             filadepersonas.Recorrer(DgvLista);
+<<<<<<< HEAD
             filadepersonas.Recorrer(LStLista);
             filadepersonas.Recorrer(CbCodigo);
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
             TxtTramite.Text = "";
@@ -36,6 +39,7 @@ namespace EstructuradeDatos
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (filadepersonas.Primero != null)
             {
 
@@ -45,10 +49,21 @@ namespace EstructuradeDatos
                 filadepersonas.Recorrer(LStLista);
             }
           
+=======
+            if (CbCodigo == null)
+            {
+                BtnEliminar.Enabled = true;
+            }
+            else
+            {
+                BtnEliminar.Enabled = false;
+            }
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
         }
 
         private void CbCodigo_SelectedIndexChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             CbCodigo.Items.Add(TxtCodigo.Text);
         }
 
@@ -74,6 +89,9 @@ namespace EstructuradeDatos
             {
                 e.Handled = true;
             }
+=======
+
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
         }
     }
 }
