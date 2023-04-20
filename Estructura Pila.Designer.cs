@@ -239,7 +239,10 @@
             this.TxtCodigo.Size = new System.Drawing.Size(100, 20);
             this.TxtCodigo.TabIndex = 4;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.TxtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCodigo_KeyPress);
+=======
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
 =======
 >>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
             // 

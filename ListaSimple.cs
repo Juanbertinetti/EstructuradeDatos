@@ -55,7 +55,11 @@ namespace EstructuradeDatos
                 {
                     ant = aux;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     aux = aux.Siguiente; //sirve para que avance uno x uno
+=======
+                    aux = aux.Siguiente;
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
 =======
                     aux = aux.Siguiente;
 >>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
@@ -70,7 +74,11 @@ namespace EstructuradeDatos
             while (aux != null)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Combo.Items.Add(aux.codigo);
+=======
+                Combo.Items.Add(aux.Nombre);
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
 =======
                 Combo.Items.Add(aux.Nombre);
 >>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
@@ -84,7 +92,11 @@ namespace EstructuradeDatos
             while (Aux != null)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Lista.Items.Add(Aux.codigo + "--" + Aux.Nombre + "--" + Aux.Tramite);
+=======
+                Lista.Items.Add(Aux.codigo + "" + Aux.Nombre + "" + Aux.Tramite);
+>>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
 =======
                 Lista.Items.Add(Aux.codigo + "" + Aux.Nombre + "" + Aux.Tramite);
 >>>>>>> 05e4f30ddeb974a586812c1c3050e622a3be2649
